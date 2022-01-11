@@ -126,7 +126,8 @@ bot.on('message', function onMessage(msg) {
                            arr = customer.chapters[messageInt-1].next_chapters;
                            string = arr.toString();
                            super_string += "["+string+"]";
-
+                          
+                          //create a buttons
                           if(arr.length == 4 ){
                             for(i=0;i<4;i++){
                               buttonString[i]=arr[i].toString();
@@ -251,7 +252,7 @@ bot.on('message', function onMessage(msg) {
                     string = customer.chapters[chapter].next_chapters.toString();
                     super_string += "["+string+"]";
 
-
+                    //create a buttons
                     if(arr.length == 4 ){
                       for(i=0;i<4;i++){
                         buttonString[i]=arr[i].toString();
